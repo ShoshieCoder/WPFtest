@@ -12,16 +12,16 @@ namespace WPFtest._1
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            int SliderValue = System.Convert.ToInt32(value);
-            if (SliderValue <= 25)
+            int val = System.Convert.ToInt32(value);
+            if (val <= 25)
             {
                 return "SMALL";
             }
-            else if ((SliderValue > 25) && (SliderValue <= 50))
+            else if ((val > 25) && (val <= 50))
             {
                 return "MEDIUM";
             }
-            else if ((SliderValue > 50) && (SliderValue < 75))
+            else if ((val > 50) && (val < 75))
             {
                 return "LARGE";
             }
