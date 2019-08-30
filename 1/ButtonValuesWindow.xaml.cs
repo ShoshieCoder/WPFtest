@@ -19,12 +19,12 @@ namespace WPFtest._1
     /// </summary>
     public partial class ButtonValuesWindow : Window
     {
-        public ButtonValuesWindow(Double Width, Double Height, string TextOfBtn)
+        public ButtonValuesWindow(Double Width, Double Height, string BtnText)
         {
             InitializeComponent();
             width.Text = Width.ToString();
             height.Text = Height.ToString();
-            text.Text = TextOfBtn;
+            text.Text = BtnText;
         }
     }
 }
