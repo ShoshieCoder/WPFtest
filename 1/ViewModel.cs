@@ -9,15 +9,15 @@ namespace WPFtest._1
 {
     public class ViewModel
     {
-        public DelegateCommand MyDelegate { get; set; }
-
+        
         public Double Width { get; set; }
         public Double Height { get; set; }
         public string BtnText { get; set; }
+        public DelegateCommand MyCommand { get; set; }
 
         public ViewModel()
         {
-            MyDelegate = new DelegateCommand(()=> {
+            MyCommand = new DelegateCommand(()=> {
                 ButtonValuesWindow Win = new ButtonValuesWindow(Width, Height, BtnText);
                 Win.Show();
             }, ()=>{ return true; });
