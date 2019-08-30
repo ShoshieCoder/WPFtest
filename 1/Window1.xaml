@@ -26,6 +26,6 @@
                    Text="{Binding ElementName=SlideHeight, Path=Value, Converter={StaticResource valueConverter}}" VerticalAlignment="Top"/>
         <Button Content="{Binding ElementName=BtnTxt, Path=Text,Mode=OneWay}" HorizontalAlignment="Left" Margin="57,298,0,0" VerticalAlignment="Top" 
                 Width="{Binding ElementName=SlideWidth, Path=Value, Mode=OneWay}" Height="{Binding ElementName=SlideHeight, Path=Value, Mode=OneWay}"
-            Command="{Binding MyDelegate, Source={StaticResource vm}}"/>
+            Command="{Binding MyCommand, Source={StaticResource vm}}"/>
     </Grid>
 </Window>
