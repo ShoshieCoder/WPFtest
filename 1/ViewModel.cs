@@ -18,8 +18,8 @@ namespace WPFtest._1
         public ViewModel()
         {
             MyDelegate = new DelegateCommand(()=> {
-                ButtonValuesWindow BtnValsWin = new ButtonValuesWindow(Width, Height, BtnText);
-                BtnValsWin.Show();
+                ButtonValuesWindow Win = new ButtonValuesWindow(Width, Height, BtnText);
+                Win.Show();
             }, ()=>{ return true; });
         }
     }
