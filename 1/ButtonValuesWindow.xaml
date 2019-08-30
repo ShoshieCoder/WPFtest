@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPFtest._1.ButtonValuesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFtest._1"
+        mc:Ignorable="d"
+        Title="ButtonValuesWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="13,50,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" RenderTransformOrigin="1.347,0.875"/>
+        <TextBlock x:Name="width" HorizontalAlignment="Left" Margin="113,50,0,0" TextWrapping="Wrap" 
+                   Text="{Binding}" VerticalAlignment="Top" Width="58"/>
+        <TextBlock HorizontalAlignment="Left" Margin="13,114,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top"/>
+        <TextBlock x:Name="height" HorizontalAlignment="Left" Margin="113,117,0,0" TextWrapping="Wrap" 
+                   Text="{Binding}" VerticalAlignment="Top" Width="58"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,180,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top"/>
+        <TextBlock x:Name="text" HorizontalAlignment="Left" Margin="113,183,0,0" TextWrapping="Wrap" 
+                   Text="{Binding}"  VerticalAlignment="Top" Width="58"/>
+    </Grid>
+</Window>
